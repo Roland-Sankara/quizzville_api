@@ -1,0 +1,85 @@
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which German field marshal was known as the `Desert Fox`?",
+			"correct_answer": "Erwin Rommel",
+			"incorrect_answers": [ "Ernst Busch", "Wolfram Freiherr von Richthofen", "Wilhelm List" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "How many manned moon landings have there been?",
+			"correct_answer": "6",
+			"incorrect_answers": [ "1", "3", "7" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "The idea of Socialism was articulated and advanced by whom?",
+			"correct_answer": "Karl Marx",
+			"incorrect_answers": [ "Vladimir Lenin", "Joseph Stalin", "Vladimir Putin" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which one of these tanks was designed and operated by the United Kingdom?",
+			"correct_answer": "Tog II",
+			"incorrect_answers": [ "M4 Sherman", "Tiger H1", "T-34" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "The original Roman alphabet lacked the following letters EXCEPT:",
+			"correct_answer": "X",
+			"incorrect_answers": [ "W", "U", "J" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which of these countries remained neutral during World War II?",
+			"correct_answer": "Switzerland",
+			"incorrect_answers": [ "United Kingdom", "France", "Italy" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which modern day country is the region that was known as Phrygia in ancient times?",
+			"correct_answer": "Turkey",
+			"incorrect_answers": [ "Syria", "Greece", "Egypt" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "When was Google founded?",
+			"correct_answer": "September 4, 1998",
+			"incorrect_answers": [ "October 9, 1997", "December 12, 1989", "Feburary 7th, 2000" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "What was the name commonly given to the ancient trade routes that connected the East and West of Eurasia?",
+			"correct_answer": "Silk Road",
+			"incorrect_answers": [ "Spice Road", "Clay Road", "Salt Road" ]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "On what street did the 1666 Great Fire of London start?",
+			"correct_answer": "Pudding Lane",
+			"incorrect_answers": [ "Baker Street", "Houses of Parliament", "St Paul&#039;s Cathedral" ]
+		}
+	]
+}
