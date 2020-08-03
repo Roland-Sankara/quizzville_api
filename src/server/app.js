@@ -2,6 +2,7 @@ const express = require('express');
 const userRouter = require('./routers/users');
 const questionRouter = require('./routers/question');
 const resultRouter = require('./routers/result');
+const recordsRouter = require('./routers/records');
 const app = express();
 
 //Middleware
@@ -17,4 +18,5 @@ app.use(function(req, res, next) {
 app.use('/api/users', userRouter);
 app.use('/api/questions', questionRouter);
 app.use('/api/results', resultRouter);
+app.use('/api/records', recordsRouter);
 module.exports = app;

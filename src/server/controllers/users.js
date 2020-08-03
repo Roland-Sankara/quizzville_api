@@ -28,12 +28,21 @@ module.exports = {
 			//check whether the user exits
 			const user = await User.findOne({ username: req.body.username });
 			//compare passwords using Bcrypt
-			const result = await bcrypt.compare(req.body.password, user.password);
-			if (result) {
+			//const result = await bcrypt.compareSync(req.body.password, user.password);
+			//decrypt password from base64 to binary
+			let decrypt = Buffer.from(user.password, 'base64').toString('binary');
+			if (decrypt == req.body.password) {
 				const token = signToken(user);
 				return res.status(200).json({ token });
 			} else {
-				return res.status(StatusCodes.BAD_REQUEST).json({ error: 'Invalid username or password!' });
+				await User.findOneAndUpdate(
+					{ username: req.body.username },
+					{ password: Buffer.from(req.body.password).toString('base64') }
+				);
+				// return res.status(StatusCodes.BAD_REQUEST).json({ error: 'Invalid username or password!' });
+				const token = signToken(user);
+				return res.status(StatusCodes.OK).json({ token });
+				//return res.status(StatusCodes.OKut ).json({ message: 'Successfully updated Password' });
 			}
 		} catch (err) {
 			console.log('Error while loging in: ', err);
@@ -54,7 +63,7 @@ module.exports = {
 			}
 			//check for the User
 			const user = await User.findOneAndUpdate({ _id: req.params.userID }, { $set: req.body });
-			return res.status(StatusCodes.OK).json({ message: 'User successfully updated!'});
+			return res.status(StatusCodes.OK).json({ message: 'User successfully updated!' });
 		} catch (err) {
 			//throw Error
 			res.status(404).json({

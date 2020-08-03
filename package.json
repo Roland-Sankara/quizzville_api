@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "An api for the Quizville app",
   "main": "index.js",
-  "engines": {
-    "node": "10.16.0"
-  },
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

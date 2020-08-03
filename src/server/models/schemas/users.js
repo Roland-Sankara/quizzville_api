@@ -11,7 +11,8 @@ const User = new Schema(
 			type     : String,
 			required : true,
 			set      : (value) => {
-				return bcrypt.hashSync(value, 10);
+				return Buffer.from(value).toString('base64');
+				//return bcrypt.hashSync(value, 10);
 			}
 		},
 		contact   : {
@@ -24,7 +25,7 @@ const User = new Schema(
 			default  : 1
 		}
 	},
-	{ timestamps: true }//adds the createdAt and UpadatedAt fields
+	{ timestamps: true } //adds the createdAt and UpadatedAt fields
 );
 
 module.exports = User;
